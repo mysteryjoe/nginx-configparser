@@ -48,6 +48,9 @@ TEST_F(NginxStringConfigTest,NestedBracket){
 	EXPECT_FALSE(ParseString(" server {{ listen ;}}"));
 }
 
+
 TEST_F(NginxStringConfigTest,MissingComma){
 	EXPECT_FALSE(ParseString(" server { listen }"));
 }
+
+
